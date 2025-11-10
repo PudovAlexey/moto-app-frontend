@@ -1,0 +1,43 @@
+{
+  "schemaNamespace": "MotoApi",
+  "schemaDownload": {
+    "downloadMethod": {
+      "introspection": {
+        "endpointURL": "http://localhost:3000/graphql",
+        "httpMethod": {
+          "POST": {}
+        },
+        "includeDeprecatedInputValues": false,
+        "outputFormat": "SDL"
+      }
+    },
+    "downloadTimeout": 60,
+    "headers": [],
+    "outputPath": "./schema.graphql"
+  },
+  "input": {
+    "operationSearchPaths": [
+      "**/*.graphql"
+    ],
+    "schemaSearchPaths": [
+      "**/schema.graphql"
+    ]
+  },
+  "output": {
+    "testMocks": {
+      "none": {}
+    },
+    "schemaTypes": {
+      "path": "./Generated",
+      "moduleType": {
+        "embeddedInTarget": {
+          "name": "moto-front",
+          "accessModifier": "internal"
+        }
+      }
+    },
+    "operations": {
+      "inSchemaModule": {}
+    }
+  }
+}

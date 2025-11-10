@@ -1,0 +1,7 @@
+query GetContactQuery($search: GetMyContactInput!) {
+  getContact(search: $search) {
+    id
+    isMyContact
+    name
+  }
+}

@@ -25,7 +25,7 @@ struct ContentView: View {
             MapView()
                 .tabItem {
                     Image(systemName: "map")
-                    Text("Карта")
+                    Text("Карn")
                 }
             
             RidersConnectPage()
@@ -39,6 +39,6 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    ContentView() // ← Просто вызываем инициализатор
         .environmentObject(MessageSlice())
 }

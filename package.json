@@ -1,0 +1,19 @@
+{
+  "name": "apollo-ios-codegen",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "fetch-schema": "./apollo-ios-cli fetch-schema --path apollo-codegen-config.json",
+    "generate": "./apollo-ios-cli generate",
+    "codegen": "./apollo-ios-cli fetch-schema --path apollo-codegen-config.json && ./apollo-ios-cli generate --path apollo-codegen-config.json",
+    "config": "./apollo-ios-cli init --schema-namespace MotoApi --module-type swiftPackage",
+    "clean": "rm -rf Generated schema.graphql",
+    "generate-json": "rover graph introspect http://localhost:3000/graphql --format json --output schema.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@apollo/rover": "^0.36.2"
+  }
+}

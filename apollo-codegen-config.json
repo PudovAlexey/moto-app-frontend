@@ -1,0 +1,27 @@
+{
+  "schemaNamespace" : "MotoApi",
+  "input" : {
+    "schemaSearchPaths": [
+      "schema.graphql"
+    ],
+    "operationSearchPaths": [
+      "moto-front/api/**/*.graphql"
+    ]
+  },
+  "output" : {
+    "testMocks" : {
+      "none" : {
+      }
+    },
+       "schemaTypes": {
+      "path": "./moto-front/api/codegen",
+      "moduleType": {
+        "swiftPackage": {}
+      }
+    },
+    "operations" : {
+      "inSchemaModule" : {
+      }
+    }
+  }
+}

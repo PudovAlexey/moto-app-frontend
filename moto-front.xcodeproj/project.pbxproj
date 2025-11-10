@@ -6,8 +6,19 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		1F5A45272EC25AB200968E2E /* MotoApi in Frameworks */ = {isa = PBXBuildFile; productRef = 1F5A45262EC25AB200968E2E /* MotoApi */; };
+		1F5A45292EC25B1300968E2E /* MotoApi in Frameworks */ = {isa = PBXBuildFile; productRef = 1F5A45282EC25B1300968E2E /* MotoApi */; };
+		1F5A452B2EC25B4900968E2E /* MotoApi in Frameworks */ = {isa = PBXBuildFile; productRef = 1F5A452A2EC25B4900968E2E /* MotoApi */; };
+		1F5A452E2EC25B8800968E2E /* MotoApi in Frameworks */ = {isa = PBXBuildFile; productRef = 1F5A452D2EC25B8800968E2E /* MotoApi */; };
+		1FFEE8802EC0C1D900EFA44A /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 1FFEE87F2EC0C1D900EFA44A /* Apollo */; };
+		1FFEE8822EC0C1D900EFA44A /* ApolloAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 1FFEE8812EC0C1D900EFA44A /* ApolloAPI */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		1F6761C42EB11F2300535C97 /* moto-front.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "moto-front.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FD99AA02EB3CB25009738B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FFEE8902EC0F99800EFA44A /* Untitled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Untitled.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -23,6 +34,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F5A452E2EC25B8800968E2E /* MotoApi in Frameworks */,
+				1F5A45292EC25B1300968E2E /* MotoApi in Frameworks */,
+				1F5A45272EC25AB200968E2E /* MotoApi in Frameworks */,
+				1F5A452B2EC25B4900968E2E /* MotoApi in Frameworks */,
+				1FFEE8822EC0C1D900EFA44A /* ApolloAPI in Frameworks */,
+				1FFEE8802EC0C1D900EFA44A /* Apollo in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,6 +49,8 @@
 		1F6761BB2EB11F2300535C97 = {
 			isa = PBXGroup;
 			children = (
+				1FFEE8902EC0F99800EFA44A /* Untitled.swift */,
+				1FD99AA02EB3CB25009738B3 /* Info.plist */,
 				1F6761C62EB11F2300535C97 /* moto-front */,
 				1F6761C52EB11F2300535C97 /* Products */,
 			);
@@ -65,6 +84,12 @@
 			);
 			name = "moto-front";
 			packageProductDependencies = (
+				1FFEE87F2EC0C1D900EFA44A /* Apollo */,
+				1FFEE8812EC0C1D900EFA44A /* ApolloAPI */,
+				1F5A45262EC25AB200968E2E /* MotoApi */,
+				1F5A45282EC25B1300968E2E /* MotoApi */,
+				1F5A452A2EC25B4900968E2E /* MotoApi */,
+				1F5A452D2EC25B8800968E2E /* MotoApi */,
 			);
 			productName = "moto-front";
 			productReference = 1F6761C42EB11F2300535C97 /* moto-front.app */;
@@ -94,6 +119,10 @@
 			);
 			mainGroup = 1F6761BB2EB11F2300535C97;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				1FFEE87E2EC0C1D900EFA44A /* XCRemoteSwiftPackageReference "apollo-ios" */,
+				1F5A452C2EC25B8800968E2E /* XCLocalSwiftPackageReference "moto-front/api/codegen" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 1F6761C52EB11F2300535C97 /* Products */;
 			projectDirPath = "";
@@ -251,8 +280,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q23639527Y;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -282,8 +313,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q23639527Y;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -328,6 +361,53 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		1F5A452C2EC25B8800968E2E /* XCLocalSwiftPackageReference "moto-front/api/codegen" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "moto-front/api/codegen";
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1FFEE87E2EC0C1D900EFA44A /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1F5A45262EC25AB200968E2E /* MotoApi */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MotoApi;
+		};
+		1F5A45282EC25B1300968E2E /* MotoApi */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MotoApi;
+		};
+		1F5A452A2EC25B4900968E2E /* MotoApi */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MotoApi;
+		};
+		1F5A452D2EC25B8800968E2E /* MotoApi */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MotoApi;
+		};
+		1FFEE87F2EC0C1D900EFA44A /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1FFEE87E2EC0C1D900EFA44A /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+		1FFEE8812EC0C1D900EFA44A /* ApolloAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1FFEE87E2EC0C1D900EFA44A /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloAPI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1F6761BC2EB11F2300535C97 /* Project object */;
 }
